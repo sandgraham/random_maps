@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="bijou.min.css" />
+	<link rel="stylesheet" type="text/css" href="map.css" />
+</head>
+<body>
+	<div class="navbar">
+		<div class="container">
+			<h4 class="pull-left">Random Map</h4>
+			<ul class="pull-right">
+				<li>Graham Murdoch</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="content">
+
+		<div id="portal">
+			<canvas id="mapCanvas"></canvas>
+		</div>
+
+		<div id="side-bar">
+
+			<div id="roughness" class="modifiers">
+				<div class="modifier-text">
+					roughness
+					<input id="roughness-input" type="number" size="3" placeholder="10" min="0" value="10">
+				</div>
+			</div>
+
+
+			<div id="altitude" class="modifiers">
+				<div class="modifier-text">
+					altitude
+					<input id="altitude-input" type="range" min="1" max="5" value="5">
+				</div>
+			</div>
+
+	<!--
+			<div id="sea level" class="modifiers">
+				<div class="modifier-text">
+					<input type="text" name="sealevel-input">
+					<div class="modifier-input">
+						<input type="submit" value="Sea Level">
+					</div>
+				</div>
+			</div>
+			<div id="color-scheme" class="modifiers">
+				<div class="modifier-text">
+					<input type="text" name="color-scheme-input">
+					<div class="modifier-input">
+						<input type="submit" value="Color Scheme">
+					</div>
+				</div>
+			</div>
+	-->
+
+			<div id="create" class="modifiers">
+				<div id="create-text" class="create-text">Create Map</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="map.js"></script>
+</body>
+</html>
