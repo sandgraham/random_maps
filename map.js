@@ -67,7 +67,6 @@ function seedMap(dataObject) {
 }
 
 // terrain generation
-// Based on Make No Wonder http://www.matthewhollett.com/wonder/
 function midpointDisplacement(dataObject, dimension) {
 	var newDimension = dimension / 2, top, topRight, topLeft, bottom, bottomLeft, bottomRight, right, left, center, i, j;
 		
