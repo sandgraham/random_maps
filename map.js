@@ -1,5 +1,4 @@
-// Based on Make No Wonder http://www.matthewhollett.com/wonder/
-// Experiment with Midpoint Displacement Algo
+// Experiment with Midpoint Displacement Algorithm
 
 // map constructor
 function Map() {
@@ -68,6 +67,7 @@ function seedMap(dataObject) {
 }
 
 // terrain generation
+// Based on Make No Wonder http://www.matthewhollett.com/wonder/
 function midpointDisplacement(dataObject, dimension) {
 	var newDimension = dimension / 2, top, topRight, topLeft, bottom, bottomLeft, bottomRight, right, left, center, i, j;
 		
