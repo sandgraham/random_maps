@@ -1,4 +1,5 @@
 // Experiment with Midpoint Displacement Algorithm
+// Based on Make No Wonder
 
 // map constructor
 function Map() {
