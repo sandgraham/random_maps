@@ -1,67 +1,42 @@
 <!doctype html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="bijou.min.css" />
 	<link rel="stylesheet" type="text/css" href="map.css" />
 </head>
 <body>
 	<div class="navbar">
-		<div class="container">
-			<h4 class="pull-left">Random Map</h4>
-			<ul class="pull-right">
-				<li><a href="https://github.com/sandgraham">Graham Murdoch</a></li>
-			</ul>
+		<div class="navbar-container">
+			<h1 class="navbar-title">
+				<a class="navbar-link" href="https://github.com/sandgraham">@sandgraham</a>
+				/
+				<a href="https://github.com/sandgraham/random_maps">
+					random_maps
+				</a>
+			</h1>
 		</div>
 	</div>
 
 	<div id="content">
-
-		<div id="portal">
+		<div class="content-container">
 			<canvas id="mapCanvas"></canvas>
-		</div>
-
-		<div id="side-bar">
-
-			<div id="roughness" class="modifiers">
-				<div class="modifier-text">
-					roughness
+			<div id="side-bar">
+				<div id="roughness" class="modifiers">
+					<label class="modifier-text" for="roughness-input">
+						roughness
+					</label>
 					<input id="roughness-input" type="number" size="3" placeholder="10" min="0" value="10">
 				</div>
-			</div>
-
-
-			<div id="altitude" class="modifiers">
-				<div class="modifier-text">
-					altitude
-					<input id="altitude-input" type="range" min="1" max="5" value="5">
+				<div id="altitude" class="modifiers">
+					<label class="modifier-text" for="altitude">
+						altitude
+					</label>
+					<input name="altitude" id="altitude-input" type="range" min="1" max="5" value="5">
 				</div>
+				<button type="button" id="create">
+					Create Map
+				</button>
 			</div>
-
-	<!--
-			<div id="sea level" class="modifiers">
-				<div class="modifier-text">
-					<input type="text" name="sealevel-input">
-					<div class="modifier-input">
-						<input type="submit" value="Sea Level">
-					</div>
-				</div>
-			</div>
-			<div id="color-scheme" class="modifiers">
-				<div class="modifier-text">
-					<input type="text" name="color-scheme-input">
-					<div class="modifier-input">
-						<input type="submit" value="Color Scheme">
-					</div>
-				</div>
-			</div>
-	-->
-
-			<div id="create" class="modifiers">
-				<div id="create-text" class="create-text">Create Map</div>
-			</div>
-
 		</div>
-
 	</div>
 
 	<script type="module" src="src/main.js"></script>
