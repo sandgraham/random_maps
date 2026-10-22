@@ -47,10 +47,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: var(--font-mono);
 }
 
-#content {
-
-}
-
 .content-container {
 	padding-inline: var(--content-gutter);
 	max-width: var(--content-width);
