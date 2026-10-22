@@ -2,15 +2,8 @@
 // Based on Make No Wonder
 
 // create a multi-dimensional array (don't need to fill array, just create it)
-export const multiDimensionalArray = (nRows, nCols) => {
-	var a = [nRows];
-	for (let i = 0; i < nRows; i++) {
-		const b = [];
-		b.length = nCols;
-		a[i] = b;
-	}
-	return a;
-};
+export const multiDimensionalArray = (nRows, nCols) =>
+	Array.from({ length: nRows }, () => new Array(nCols));
 
 // normalize a value to make sure it is within bounds
 export const normalize = (value) => {
